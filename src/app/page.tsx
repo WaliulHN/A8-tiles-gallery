@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="space-y-12">
-      {/* Hero Banner */}
+   
       <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-primary/10">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20" />
         <div className="relative py-16 px-6 md:py-24 md:px-12 text-center">
@@ -19,7 +19,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Marquee */}
       <div className="overflow-hidden bg-primary/10 rounded-xl py-3 border border-primary/20">
         <div className="whitespace-nowrap animate-marquee flex gap-8 items-center">
           {[...Array(2)].flatMap(() => [
@@ -36,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Section */}
+      
       <section className="py-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-primary mb-2">Featured Collections</h2>

@@ -14,7 +14,7 @@ export default function Navbar() {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-  // Fetch session on component mount
+ 
   useEffect(() => {
     const fetchSession = async () => {
       try {
@@ -69,7 +69,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Center Links */}
+      
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">
           <li><Link href="/" className={`btn btn-sm ${pathname === '/' ? 'btn-active' : ''}`}>Home</Link></li>
@@ -80,7 +80,7 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* Right Auth Buttons */}
+      
       <div className="navbar-end gap-2">
         {session?.user ? (
           <div className="dropdown dropdown-end">
